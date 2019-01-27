@@ -18,5 +18,6 @@ This graph illustrates the states consumption habits of 54 years. California’s
 This graph represents the consumption of LPG of all states in the US over one year. We can see that the median is around 2000 BTU and the outliers close to 8000 BTU representing states like California and North Carolina.
 
 
-Examples Used!
+Examples Used
+
 http://matplotlib.org/examples/lines_bars_and_markers/barh_demo.html! http://matplotlib.org/examples/api/date_index_formatter.html! http://matplotlib.org/examples/statistics/histogram_demo_multihist.html! http://matplotlib.org/examples/pylab_examples/legend_demo3.html! http://matplotlib.org/users/pyplot_tutorial.html! https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf!
