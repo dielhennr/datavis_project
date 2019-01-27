@@ -1,4 +1,4 @@
-# Code written in Spring 2017
+# Code Written in Spring 2017
 
 # Data Visualization Project
 ## Energy Consumption in the US
