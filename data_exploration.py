@@ -22,14 +22,11 @@ def top_consumers_2014():
 		if petrol_consumption > 4000:
 			states[state] = petrol_consumption
 
-
-
 	fig, ax = plt.subplots()
 
 
 	y_pos = np.arange(len(states))
 	x_pos = states.values()
-
 
 	ax.barh(y_pos, x_pos, align='center',
 	        color='blue')
@@ -61,18 +58,15 @@ def cali_consumption():
 			petrol_consumption = int(float(line[9]))
 			nc_years.append(petrol_consumption)
 
-
 	plt.hist(cali_years, bins = 10, histtype="step", fill=True, color= "green", label="North\nCarolina")
 	plt.hist(nc_years, bins = 10, histtype="step", fill=False, color= "red", label="California")
 	plt.legend()
-
 
 	ax.set_xlabel('Commercial Consumption in Billion BTU')
 	ax.set_ylabel('Years of this much consumption')
 	ax.set_title("Commercial liquid petroleum consumption from 1960 - 2014")
 	plt.show()
 	ifile.close()
-
 
 def cali_line():
 	fig, ax = plt.subplots()
@@ -95,7 +89,6 @@ def cali_line():
 			ncyear = int(line[-1])
 			nocar_years[ncyear] = petrol_consumption
 
-
 	cali = plt.plot(list(cali_years.keys()), list(cali_years.values()), "o-", label="CA", color = "g")
 	ncar = plt.plot(list(nocar_years.keys()), list(nocar_years.values()), "o-", label="NC", color = "m")
 	plt.legend()
@@ -106,8 +99,6 @@ def cali_line():
 	ifile.close()
 
 	np.random.seed(0)
-
-
 
 def us_totals():
 	ifile = open('energy.csv', 'r')
@@ -155,8 +146,6 @@ def us_totals():
 
 	plt.show()
 
-
-
 	ifile.close()
 
 def box_plot():
@@ -167,23 +156,8 @@ def box_plot():
 
 	plt.show()
 
-
 top_consumers_2014()
 cali_consumption()
 cali_line()
 us_totals()
 box_plot()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
